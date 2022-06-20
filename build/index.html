@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./bundle.css" />
+    </head>
+    <body>
+        <div class="loading-overlay"></div>
+        <div class="greyout"></div>
+        <div>
+            <div class="header header--title">_Weather Reporter</div>
+            <div>
+                <p class="subtitle">Select a Canadian city to see the current weather report:</p>
+            </div>
+            <div class="icons">
+                <div class="icons__selected">
+                    <div class="nav">
+                        <select class="nav__menu">
+                            <option class="city" selected="selected">Airdrie, Alberta</option>
+                        </select>
+                    </div>
+                    <div class="clouds__box">
+                        <div id="clouds"></div>
+                    </div>
+                    <div class="content">
+                        <div class="content__title"></div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        <div class="flex-box">
+            <div class="temperature">
+                <div id="temperature__current"></div>
+                <div id="temperature__low"></div>
+                <div id="temperature__high"></div>
+                <div id="feels__like"></div>
+            </div>
+            <div class="precipitation">
+                <div id="get__precipitation"></div>
+            </div>
+            <div class="humidity">
+                <div id="get__humidity"></div>
+            </div>
+            <div class="airpressure">
+                <div id="get__airpressure"></div>
+            </div>
+            <div class="wind">
+                <div id="get__wind__direction"></div>
+                <div id="get__wind__what__is__it__like"></div>
+                <div id="get__wind__speed"></div>
+            </div>
+        </div>
+        <div class="credits">
+            Powered by <a href="https://openweathermap.org/" class="link">openweathermap</a> | <a href="https://erikflowers.github.io/weather-icons" class="link">weather-icons</a>
+        </div>        
+        <script type="text/javascript" src="./bundle.js"></script>
+    </body>
+</html>
